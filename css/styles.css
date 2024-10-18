@@ -1,0 +1,237 @@
+/* General Page Styles */
+body {
+    background-color: #0d0f1a; /* Fondo oscuro cibernético */
+    color: #d1d1e0; /* Color de texto claro */
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    margin: 0; /* Eliminar márgenes */
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #d1d1e0; /* Color claro para enlaces del navbar */
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #00ffcc; /* Color azul cibernético en hover */
+}
+
+.navbar-brand {
+    color: #00ffcc; /* Color cibernético para el logo */
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('img/dev/f_1.png'); /* Cambia por la imagen de fondo deseada */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centrando verticalmente */
+    justify-content: center; /* Centrando horizontalmente */
+}
+
+#hero h1 {
+    color: #00ffcc; /* Texto principal en color cibernético */
+}
+        body {
+            background-color: #121212; /* Fondo general oscuro */
+        }
+
+        .bg-dark {
+            background-color: #1c1c1c !important; /* Fondo oscuro más claro para contraste */
+        }
+
+        .text-light {
+            color: #f8f9fa !important; /* Texto claro */
+        }
+
+        h2, h3 {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejorar legibilidad */
+        }
+
+        /* Mejorar la visibilidad de los enlaces */
+        a.text-info {
+            color: #0d6efd; /* Color de enlace */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto para enlaces */
+        }
+
+        /* Estilo para el formulario */
+        .form-control {
+            background-color: #343a40; /* Fondo más oscuro para el formulario */
+            color: #ffffff; /* Color de texto blanco */
+            border: 1px solid #495057; /* Borde claro */
+        }
+.btn-primary {
+    background-color: #00ffcc; /* Azul cibernético para botones */
+    border-color: #00ffcc;
+}
+
+.btn-primary:hover {
+    background-color: #007c99; /* Oscurece en hover */
+    border-color: #007c99;
+}
+
+/* About Section */
+#about .btn-info {
+    background-color: #00ffcc;
+    border-color: #00ffcc;
+}
+
+#about .btn-info:hover {
+    background-color: #007c99;
+    border-color: #007c99;
+}
+
+#about .btn-outline-info {
+    border-color: #00ffcc;
+    color: #00ffcc;
+}
+
+#about .btn-outline-info:hover {
+    background-color: #00ffcc;
+    color: #fff;
+}
+
+/* Portfolio Section */
+.card {
+    background-color: #111322; /* Fondo oscuro para las tarjetas */
+    border: none;
+}
+
+.card-title {
+    color: #00ffcc; /* Color de título de tarjeta */
+}
+
+.card-text {
+    color: #d1d1e0; /* Texto claro */
+}
+
+.card a {
+    color: #00ffcc; /* Enlaces en azul cibernético */
+}
+
+.card a:hover {
+    color: #007c99; /* Color en hover */
+}
+
+/* Services Section */
+.service {
+    background-color: #111322;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05); /* Efecto de agrandar en hover */
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.6); /* Sombra cibernética */
+}
+
+.service h3 {
+    color: #00ffcc; /* Color de títulos de servicios */
+}
+
+/* Experience Section */
+#experience {
+    background-color: #0d0f1a; /* Fondo de experiencia */
+    padding: 5rem 0; /* Espaciado */
+    text-align: center; /* Centrar texto */
+}
+
+#experience img {
+    width: 80px; /* Tamaño de logos */
+    transition: transform 0.3s ease; /* Transición suave en hover */
+}
+
+#experience img:hover {
+    transform: scale(1.1); /* Agranda las imágenes en hover */
+}
+
+/* Contact Section */
+input.form-control, textarea.form-control {
+    background-color: #111322; /* Fondo de entradas */
+    border: none;
+    color: #d1d1e0; /* Texto de entrada claro */
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    background-color: #1a1c2b;
+    color: #d1d1e0;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.6); /* Efecto cibernético */
+}
+
+button.btn-info {
+    background-color: #00ffcc;
+    border-color: #00ffcc;
+}
+
+button.btn-info:hover {
+    background-color: #007c99;
+    border-color: #007c99;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0c14; /* Fondo oscuro */
+    color: #d1d1e0; /* Color de texto claro */
+    padding: 1rem 0; /* Espaciado */
+}
+
+footer p {
+    margin: 0; /* Sin márgenes */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem; /* Tamaño de fuente para pantallas pequeñas */
+    }
+}
+body {
+    background-color: #1b1b1b;
+}
+
+.list-group-item {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.card-title {
+    transition: color 0.3s;
+}
+
+.card-title:hover {
+    color: #17a2b8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+img {
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Adjusting text color */
+.text-gray {
+    color: #d3d3d3;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+<!-- Navbar -->
+<header class="bg-dark py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+        <a class="navbar-brand" href="#"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="text-center text-light d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="container">
+        <h1 class="display-1">I'm a <span class="text-info">Tec Developer Software</span></h1>
+        <a href="#portfolio" class="btn btn-primary btn-lg mt-4">Proyectos anteriores</a>
+    </div>
+</section>
+<!-- Dynamic Content Display -->
+<section id="about" class="container py-5">
+    <div class="row">
+        <!-- Image on the Left -->
+        <div class="col-md-4 mb-4">
+            <img src="img/dev/Dev_.png" alt="Profile Picture" class="img-fluid rounded shadow-lg">
+        </div>
+        
+        <!-- Dynamic Content Display on the Right -->
+        <div class="col-md-8">
+            <!-- Buttons for Categories -->
+            <div class="mb-4">
+                <h2 class="text-info">Capacidades</h2>
+                <div class="list-group list-group-horizontal">
+                    <button class="list-group-item list-group-item-action bg-black text-info" onclick="showCategory('About')">Sobre mí</button>
+                    <button class="list-group-item list-group-item-action bg-black text-info" onclick="showCategory('competencias')">Competencias</button>
+                    <button class="list-group-item list-group-item-action bg-black text-info" onclick="showCategory('conocimientos')">Conocimientos</button>
+                    <button class="list-group-item list-group-item-action bg-black text-info" onclick="showCategory('experiencia')">Experiencia</button>
+                </div>
+            </div>
+            
+            <!-- About Me Section -->
+            <div id="About" class="category-content text-light">
+                <h2>Sobre mí</h2>
+                <p>Soy un joven estudiante técnico de desarrollo de software con 
+                muchas ganas de trabajar y aprender de nuevas tecnología para ir innovando cada vez mas en la tecnología.
+                </p>
+            </div>
+            
+            <!-- Competencias Section -->
+            <div id="competencias" class="category-content text-ligh" style="display: none;">
+                <h2>Competencias</h2>
+                <ul>
+                    <li>Conocimiento amplio en los aspectos computacionales</li>
+                    <li>Resolución de Problemas</li>
+                    <li>Trabajo en Equipo</li>
+                    <li>Gestión del Tiempo</li>
+                    <li>Comunicación Efectiva</li>
+                    <li>Manejo el idioma del inglés, manteniendo una conversación efectiva</li>
+                </ul>
+            </div>
+
+            <!-- Conocimientos Section -->
+            <div id="conocimientos" class="category-content text-gray" style="display: none;">
+                <h2>Conocimientos</h2>
+                <ul>
+                    <li>Desarrollo Web: HTML5, CSS3, JavaScript</li>
+                    <li>Framework: Bootstrap</li>
+                    <li>Conocimientos básicos en bases de datos MySQL</li>
+                    <li>Conocimientos en el uso de Java orientado a objetos</li>
+                    <li>Experiencia en desarrollo de aplicaciones con la herramienta NetBeans</li>
+                </ul>
+            </div>
+
+            <!-- Experiencia Section -->
+            <div id="experiencia" class="category-content text-light" style="display: none;">
+                <h2>Estudios</h2>
+                <li>Aprendizaje empiríco en el inglés</li>
+                <li>3 años de experiencia trabajando cómo soporte técnico</li>
+                <li>Estudio y desarrollo de la habilidad "Learn at how Learn" </li>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="container py-5 text-center">
+    <h2 class="text-uppercase text-light mb-5">Portafolio</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card bg-black text-light shadow-lg animate-fade-in">
+                <div class="card-body">
+                    <h3 class="card-title text-info">Proyecto 1</h3>
+                    <p class="card-text">Desarrollo de app en NetBeans de reservas de habitaciones para un hotel en Java</p>
+                    <a href="https://github.com/CodeZercyhX/system_reservas_hotel.git" class="btn btn-outline-info">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card bg-black text-light shadow-lg animate-fade-in">
+                <div class="card-body">
+                    <h3 class="card-title text-info">Proyecto 2</h3>
+                    <p class="card-text">Desarrollo de un juego de ahorcado con css, html y Js</p>
+                    <a href="https://github.com/CodeZercyhX/ahorcado.github.io.git" class="btn btn-outline-info">Ver Proyecto</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+
+
+<!-- Experience Section -->
+<section id="experience" class="py-5 bg-dark text-center">
+    <h2 class="text-uppercase text-light">Experiencias</h2>
+    <div class="d-flex justify-content-center mt-4">
+        <img src="img/Icon/java.png" class="img-fluid mx-3" alt="Java" style="width: 80px;">
+        <img src="img/Icon/html-5.png" class="img-fluid mx-3" alt="Html" style="width: 80px;">
+        <img src="img/Icon/c-.png" class="img-fluid mx-3" alt="C++" style="width: 80px;">
+        <img src="img/Icon/Py_2.png" class="img-fluid mx-3" alt="Python" style="width: 80px;">
+    </div>
+</section>
+<!-- Small Contact Section -->
+<!-- Contact Section with Custom Images -->
+
+<section id="contact" class="container py-5">
+    <h2 class="text-uppercase text-light-shadow text-center mb-4">Contactame</h2>
+    <p class="text-center text-light mb-5">Puedes contactarme a través de cualquiera de las siguientes plataformas:</p>
+    <div class="d-flex justify-content-center align-items-center gap-4">
+        <!-- GitHub -->
+        <div class="text-center">
+            <a href="https://github.com/CodeZercyhX" target="_blank" class="text-light">
+                <img src="img/icon_redes/github.png" alt="GitHub" class="img-fluid" style="width: 60px; height: 60px;">
+            </a>
+        </div>
+        <!-- LinkedIn -->
+        <div class="text-center">
+            <a href="https://www.linkedin.com/in/luis-zercyhx-hurtado-riascos-258b2a305/" target="_blank" class="text-light">
+                <img src="img/icon_redes/linkedin.png" alt="LinkedIn" class="img-fluid" style="width: 60px; height: 60px;">
+            </a>
+        </div>
+        <!-- Email -->
+        <div class="text-center">
+            <a href="mateohr8923@gmail.com" class="text-light">
+                <img src="img/icon_redes/gmail.png" alt="Email" class="img-fluid" style="width: 60px; height: 60px;">
+                <p>mateohr2389@gmail.com</p>
+            </a>
+        </div>
+        <!-- Twitter -->
+        <div class="text-center">
+            <a href="https://twitter.com/" target="_blank" class="text-light">
+                <img src="img/icon_redes/X.png" alt="Twitter" class="img-fluid" style="width: 60px; height: 60px;">
+            </a>
+        </div>
+        <div class="text-center">
+            <a href="discord.com" target="_blank" class="text-light">
+                <img src="img/icon_redes/discord.png" alt="Twitter" class="img-fluid" style="width: 60px; height: 60px;">
+                <p>CodeZercyhX#6187</p>
+            </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-3 text-center">
+    <p>© 2024 Mi portafolio. Todos los derechos reservados </p>
+</footer>
+
+<!-- Styles -->
+<style>
+    body {
+        background-color: #121212;
+        background-image: url('img/dev/f_0.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+
+    .bg-dark {
+        background-color: #1c1c1c !important;
+    }
+
+    .text-light {
+        color: #f8f9fa !important;
+    }
+
+    h2, h3 {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    a.text-info {
+        color: #0d6efd;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-control {
+        background-color: #343a40;
+        color: #ffffff;
+        border: 1px solid #495057;
+    }
+    .list-group-item {
+        background-color: #343a40;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .list-group-item:hover {
+        background-color: #495057;
+    }
+
+    .category-content {
+        display: none;
+    }
+
+    .category-content h2 {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+
+</style>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS for menu -->
+<script>
+    function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.style.display = 'none';
+        });
+        // Show the selected section
+        document.getElementById(sectionId).style.display = 'block';
+    }
+function showCategory(categoryId) {
+        // Hide all category contents
+        document.querySelectorAll('.category-content').forEach(content => {
+            content.style.display = 'none';
+        });
+        // Show the selected category content
+        document.getElementById(categoryId).style.display = 'block';
+    }
+function showCategory(category) {
+    const categories = ['About', 'competencias', 'conocimientos', 'experiencia'];
+    categories.forEach(function(cat) {
+        document.getElementById(cat).style.display = 'none';
+    });
+    document.getElementById(category).style.display = 'block';
+    
+    // Añadir animación fade-in
+    document.getElementById(category).classList.add('animate-fade-in');
+}
+
+</script>
+</body>
+</html>
